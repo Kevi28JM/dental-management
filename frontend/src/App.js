@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage"; // Import the HomePage component
+
 function App() {
   return (
-    <div>
-      <h1>Welcome to Family Dental Surgery</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 
